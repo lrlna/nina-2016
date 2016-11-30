@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NodeInteractive US 2016, Cellular Automata</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+    </style>
+    <link rel="stylesheet" href="./src/style.css"/>
+  </head>
+  <body>
+    <textarea id="source">
+      background-image: url(./src/images/space.jpg)
+      background-size: cover
+      class: middle
+
+      #  .big-one[.blue[JAVASCRIPT TAKES ON GENETICALLY EVOLVING CELLULAR AUTOMATA]]
+
+      ### .blue[i.e. hot take on cellular automata]
+
+      ---
+      class: middle
+
+      # .big-one.super-title[![wave](./src/images/wave.png) &nbsp NodeInteractive ![us](./src/images/us.png)!]
+
+      ---
+      class: middle
+
+      # .big-one[.pink-border[![sassyLady](./src/images/sassyLady.png) &nbsp &nbsp &nbsp   I am [@_lrlna](https://twitter.com/lrlna)]]
+
+      ---
+      background-image: url(./src/images/space.jpg)
+      background-size: cover
+      class: middle
+
+      #  .big-one[.blue[JAVASCRIPT TAKES ON GENETICALLY EVOLVING CELLULAR AUTOMATA]]
+
+      ### .blue[i.e. hot take on cellular automata]
+
+      ---
+      background-image: url(./src/images/lost.gif)
+      background-size: cover
+
+      ---
+      class: middle
+
+      # .pink-border[Melanie Mitchell, _Complexity: A Guided Tour_]
+
+      ???
+      cellular automata: a descrete model in computations/math.
+
+      ---
+      background-image: url(./src/images/keyboard.gif)
+      background-size: cover
+
+      class: center, bottom
+
+      # .blue[so I got coding]
+
+      ---
+      background-image: url(./src/images/rule110.gif)
+      background-size: cover
+
+      .citation[lrlna.github.io/cellular-automata]
+
+      ---
+      background-image: url(./src/images/excited-baby.gif)
+      background-size: cover
+
+      ---
+      background-image: url(./src/images/space.jpg)
+      background-size: cover
+
+      class: middle
+
+      # .blue[Let's talk cellular automata]
+
+      ---
+      class: middle
+
+      > Cellular automata are decentralized spatially extended systems consisting of large numbers of simple identical components with local connectivity.
+
+      ### .blockquote-footer[[Melanie Mitchel](http://web.cecs.pdx.edu/~mm/ca-review.pdf)]
+      ???
+      They have been used as models of physical and biological phenomena, such as fluid flow, galaxy formation, earthquakes, and biological pattern formation. They have been considered as mathematical objects about which formal properties can be proved. They have been used as parallel computing devices, both for the high-speed simulation of scientific models and for computational tasks such as image processing.
+
+      ---
+      background-image: url(./src/images/space.jpg)
+      background-size: cover
+
+      class: middle
+
+      # .big-one[.blue[Complex Systems]]
+
+      ???
+      The automata produced is more complex than itself, which is why it's so interesting to people. But what is complexity?
+
+      ---
+      class: middle
+
+      # .pink-border[lol what is complexity, even?]
+
+      ---
+      class: middle
+
+      > *noun*&nbsp: complexity </br></br> the state or quality of being intricate or complicated.
+      ### .blockquote-footer[the Internet]
+
+      ---
+      class: middle
+
+      > Complexity is generally used to characterize something with many parts where those parts interact with each other in multiple ways, culminating in a higher order of emergence greater than the sum of its parts.
+
+      ### .blockquote-footer[[wikipedia](https://en.wikipedia.org/wiki/Complexity)]
+      ---
+      class: middle
+
+      # .pink-border[John Von Neumann]
+
+      ---
+      class: middle
+
+      # .pink-border[2 kinds of Automata]:
+
+      .citation[[John Von Neumann, _Theory of Self-Reproducing Automata_](http://cba.mit.edu/events/03.11.ASE/docs/VonNeumann.pdf)]
+      --
+
+      ## ![robot](./src/images/robot.png) Artificial
+      ## ![shell](./src/images/shell.png) Natural
+
+      ---
+      class: middle
+
+      ## .pink-border[complex systems in nature --> ]
+      ## .pink-border[designing artificial complex systems]
+
+      ???
+      cellular automata would be essential both for understanding complex systems in nature and for designing artificial complex systems.
+
+      ---
+      background-image: url(./src/images/space.jpg)
+      background-size: cover
+
+      class: right, middle
+
+      # .blue[ok, tell me more!]
+
+      ???
+      Let's talk about traits! Rule definition, based on the rules, we create outcomes
+
+      ---
+      class: middle
+      ## .pink-border[Result is dependant on how .super-title[elementary parts] are defined]
+
+      .citation[[John Von Neumann, _Theory of Self-Reproducing Automata_](http://cba.mit.edu/events/03.11.ASE/docs/VonNeumann.pdf)]
+
+      ???
+      All follow rulesss: OR trait #1
+      Results of the automata depen on how elementary parts are defined, i.e. the rules
+      ---
+      class: middle
+
+      # .pink-border[.super-title[awarness] of its parts]
+
+      .citation[[John Von Neumann, _Theory of Self-Reproducing Automata_](http://cba.mit.edu/events/03.11.ASE/docs/VonNeumann.pdf)]
+
+      ???
+      Trait #2
+      Know all the things
+
+      ---
+      class: middle
+
+      # .pink-border[Operations are not directed at themselves]
+
+      .citation[[John Von Neumann, _Theory of Self-Reproducing Automata_](http://cba.mit.edu/events/03.11.ASE/docs/VonNeumann.pdf)]
+
+      ???
+      Trait #3
+      if operations are not directed at themselves, then we can deduce that the results produced are unlike their character
+
+      ---
+      background-image: url(./src/images/space.jpg)
+      background-size: cover
+
+      class: right, middle
+
+      # .blue[Produce a more complicated object from less complicated parts]
+
+      ---
+      background-image: url(./src/images/turingMachine.jpg)
+      background-size: cover
+
+      class: middle
+
+      # .big-one[.blue[Turing Machine]]
+
+      ???
+      one of the most basic ones: turing machine :wave:
+      want a turing machine picture, picture of turing
+
+      ---
+      background-image: url('./src/images/turingMachine.jpg')
+      background-size: cover
+
+      class: middle
+
+      ## .blue[automaton => action]
+      --
+      <br/>
+      ## .blue[tape &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp => product]
+      --
+      <br/>
+      #### .blue-color[=============================]
+      # .blue[different constructs]
+
+      ???
+      turing machine = infintite tape in both directions, a puncher to punch some holes based on conditions
+      automaton doesn't produce a medium at all, but instead modifies it.
+
+      ---
+      class: middle
+
+      # .pink-border[trait 2: </br> ![sparkles](./src/images/sparkles.png) awarness ![sparkles](./src/images/sparkles.png) ?]
+
+      ???
+      much like in life, a lot is dependent on how you work with your neighbours
+
+      ---
+      background-image: url(./src/images/space.jpg)
+      background-size: cover
+      class: middle
+
+      # .blue[Von Neumann's Automaton]
+      ---
+      background-image: url(./src/images/von-neumann.jpg)
+      background-size: cover
+
+      ---
+      background-image: url(./src/images/space.jpg)
+      background-size: cover
+
+      class: middle
+
+      # .blue[Conway's Game of Life]
+
+      .citation[_Conway's Game of Life, https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life_]
+      ???
+      aka the most familiar example is conway's game of life
+
+      ---
+      background-image: url(./src/images/binary-states.jpg)
+      background-size: cover
+
+      .citation[_Conway's Game of Life, https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life_]
+
+      ---
+      background-image: url(./src/images/conway.jpg)
+      background-size: cover
+
+      .citation[_Conway's Game of Life, https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life_]
+
+      ???
+      if you are a coffee and have 3 cakes = become a cake 
+      if cake and 2 or 3 cakes = stay a cake
+      if a cake and there are less than 2 of you = become a coffee 
+
+      ---
+      # .pink-border[glider dot gif]
+      ![glider](./src/images/glider.gif)
+
+      .citation[[_glider_](http://www.conwaylife.com/wiki/Glider)]
+
+      ???
+      couple of images of this automata. life, pistols
+
+      ---
+      # .pink-border[blaster dot gif]
+      ![blaster](./src/images/blaster.gif)
+
+      .citation[[_blaster_](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#/media/File:Gospers_glider_gun.gif)]
+      ???
+      couple of images of this automata. life, pistols
+
+      ---
+      class: middle
+
+      # .pink-border[2 dimensional + binary]
+
+      ---
+      background-image: url(./src/images/space.jpg)
+      background-size: cover
+
+      class: middle
+
+      # .blue[Wolfram + Elementary Cellular Automata]
+
+      .citation[Stephen Wolfram, _Computational Theory of Cellular Automata _]
+
+      ---
+      class: middle
+
+      # .pink-border[1 dimensional + binary]
+
+      .citation[Stephen Wolfram, _Computational Theory of Cellular Automata _]
+
+      ---
+      background-image: url(./src/images/binary-states.jpg)
+      background-size: cover
+
+      ---
+      background-image: url(./src/images/your-hood.jpg)
+      background-size: cover
+
+      ---
+      background-image: url(./src/images/lattice.jpg)
+      background-size: cover
+
+      ---
+      background-image: url(./src/images/multiple-lattice.jpg)
+      background-size: cover
+
+      ---
+      background-image: url(./src/images/keyboard.gif)
+      background-size: cover
+
+      class: middle
+
+      # .blue[Let's take a look]
+
+      ---
+      class: middle
+
+      > Simple components with local information and communication give rise to coordinated global information processing
+
+      ### .blockquote-footer[Melanie Mitchell]
+      ???
+      working as a decentralized, spatially extended systems, thus modeling a natural system 
+      von neumann lectures --
+
+      ---
+      class: middle
+
+      # .pink-border[Certain patterns will dominate]
+
+      ---
+      class: middle
+
+      # .pink-border[Pattern (*noun*):]
+      ## .definition[A set of configurations sharing a .super-title[common spacial structure]]
+      .citation[James E. Hanson, James P. Crutchfield, _Computational Mechanics of Cellular Automata: an Example_]
+
+      ???
+      Crutchfield + Hanson in computational mechanics of CA
+
+      ---
+      class: middle
+
+      # .pink-border[Discovery:]
+      ## .definition[Diversity of spatio-temporal behaviour where system organizes *itself* &nbsp into patterns]
+
+      .citation[James E. Hanson, James P. Crutchfield, _Computational Mechanics of Cellular Automata: an Example_]
+
+      ---
+      class: middle
+
+      > Complexity is generally used to characterize something with many parts where those parts interact with each other in multiple ways, culminating in a higher order of emergence greater than the sum of its parts.
+
+      ### .blockquote-footer[[wikipedia](https://en.wikipedia.org/wiki/Complexity)]
+
+      ---
+      class: middle
+
+      ## .pink-border[complex systems in nature --> ]
+      ## .pink-border[designing artificial complex systems]
+
+      ???
+      cellular automata would be essential both for understanding complex systems in nature and for designing artificial complex systems.
+
+      ---
+      background-image: url(./src/images/keyboard.gif)
+      background-size: cover
+      class: middle
+
+      # .pink[Introducing: _olivaw_]
+      ### .blue[[github.com/lrlna/olivaw](github.com/lrlna/olivaw)]
+
+      ---
+      background-image: url(./src/images/all-hoods.jpg)
+      background-size: cover
+
+      ---
+      background-image: url(./src/images/total-rules.jpg)
+      background-size: cover
+
+      ---
+      background-image: url(./src/images/rule-110.jpg)
+      background-size: cover
+
+      ---
+      class: middle
+
+      ```
+      return ("000000000" + parseInt(num, 10).toString(2)).substr(-8)
+      ```
+
+      ---
+      class: middle
+      ```
+        self.getRule = function (neighbourhood) {
+          var currentRule
+          var rule = [...self.rule]
+
+          neighbourhoods.forEach( (hood, index) => {
+            if (hood === neighbourhood) {
+              currentRule = rule[index]
+            }
+          })
+
+          return currentRule
+        }
+      ```
+
+      ---
+      background-image: url(./src/images/multiple-lattice.jpg)
+      background-size: cover
+
+      ---
+      background-image: url(./src/images/onesandzeros.gif)
+      background-size: contain
+      background-position: right
+
+      ---
+      background-image: url(./src/images/rule-110.jpg)
+      background-size: cover
+
+      ---
+      background-image: url(./src/images/space.jpg)
+      background-size: cover
+
+      class: middle
+
+      # .big-one[.blue[Genetic Algorithms + <br/> Cellular Automata]]
+
+      ???
+      because such a simple system produces and models are more complex result, people have been looking at these as models to work on
+
+      ---
+      class: middle
+
+      ##1. .pink-border[Density Classification]
+      ##2. .pink-border[Synchronization Tasks]
+      ##3. .pink-border[Random Number Generations]
+
+      .citation[Mitchell, Crutchfield, Das, _Evolving Cellular Automata with Genetic Algorithms: A Review of Recent Work_]
+
+      ---
+      background-image: url(./src/images/space.jpg)
+      background-size: cover
+      class: middle
+
+      # .blue[Genetic Algorithm Structure for Density Classification]
+
+      ---
+      class: middle
+
+      # .pink-border[aka Automata votes ![vote](./src/images/vote.png)]
+
+      ---
+      class: middle
+      ## .pink-border[fitness test:] ![runner](./src/images/runner.png)&nbsp ![bike](./src/images/bike.png)&nbsp![weightlifter](./src/images/weightlifter.png)
+
+      .citation[Mitchell, Crutchfield, Das, _Evolving Cellular Automata with Genetic Algorithms: A Review of Recent Work_]
+
+      ---
+      class: middle
+      ```
+        self.automata = []
+      ```
+
+      ---
+      class: middle
+      ```
+        var lastLife = automaton.slice(-1)[0]
+      ```
+
+      ---
+      class: middle
+      ```
+        var lastLife = automaton.slice(-1)[0]
+
+        var nextLife = lastLife.map(self.nextLife)
+        nextLife = self.setNeighbours(nextLife)
+        automaton.push(nextLife)
+      ```
+
+      ---
+      background-image: url(./src/images/states.png)
+      background-size: contain
+      background-position: right
+
+      ---
+      background-image: url(./src/images/keyboard.gif)
+      background-size: cover
+      class: middle
+
+      # .pink[so what's next?]
+
+      ---
+      # .pink-border[Resources]
+
+      ##### .pink-border[Melanie Mitchell, _Complexity: A Guided Tour_]
+      ##### .pink-border[John Von Neumann, _Theory of Self-Reproducing Automata, http://cba.mit.edu/events/03.11.ASE/docs/VonNeumann.pdf_]
+      ##### .pink-border[Stephen Wolfram, _Computational Theory of Cellular Automata _]
+      ##### .pink-border[Mitchell, Crutchfield, Das, _Evolving Cellular Automata with Genetic Algorithms: A Review of Recent Work_]
+      ##### .pink-border[P. Sahota. M. F. Daemi and D. G. Elliman, _training genetically evolving cellular automata for image processing_]
+
+      ---
+      background-image: url(./src/images/keyboard.gif)
+      background-size: cover
+
+      class: center, middle
+
+      # .big-one[.blue[Thanks, Austin]
+      ## .blue[Say hi, [@_lrlna](https://twitter.com/_lrlna)![sparkles](./src/images/sparkles.png)]]
+
+
+    </textarea>
+
+    <script src="./src/remark.js"></script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+  </html>
